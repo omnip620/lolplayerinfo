@@ -1,0 +1,18 @@
+{
+  "name": "LOLPlayerInfo",
+  "version": "1.0.0",
+  "description": "async get multi player info ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 500,
+    "frame": true,
+    "title": "yeah"
+  },
+  "author": "panew",
+  "license": "ISC"
+}

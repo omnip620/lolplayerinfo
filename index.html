@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>战绩查询</title>
+  <style>
+    table tr td {
+      text-align: center;
+    }
+
+    .red {
+      color: #c80000;
+    }
+
+    .green {
+      color: #129e0f;
+    }
+    table{
+      width: 315px;
+    }
+    .player-name{
+      width: 315px;
+      text-align: center;
+    }
+    .recent-info{
+      float: left;
+    }
+  </style>
+</head>
+<body>
+
+
+<form>
+  <label for="area">大区</label>
+  <input id="area" type="text" name="serverName" value="网通三"/>
+  <br>
+  <label for="nick">昵称</label>
+  <textarea id="nick" name="playerNames"></textarea>
+  <a href="#" id="search">查询</a>
+  <a href="#" id="clear">清空</a>
+</form>
+<div id="data"></div>
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
