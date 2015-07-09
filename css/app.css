@@ -1,0 +1,35 @@
+html{
+    background-color: #fcfcfc;
+}
+td,th{
+    padding: 0;
+    text-align: center;
+}
+
+.player-name{
+    width: 315px;
+}
+.recent-info{
+    float: left;
+    text-align: center;
+}
+.form-data{
+    border-right: 1px solid #dedede;
+    height: 100%;
+    width: 250px;
+    padding-top: 20px;
+    position: fixed;
+    background-color: #FFFFFF;
+}
+main{
+    padding-left: 250px;
+}
+.recent-info .red{
+    background-color: transparent!important;
+    color: red;
+
+}
+.recent-info .green{
+    background-color: transparent!important;
+    color: green;
+}

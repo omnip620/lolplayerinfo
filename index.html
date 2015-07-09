@@ -3,44 +3,63 @@
 <head>
   <meta charset="UTF-8"/>
   <title>战绩查询</title>
-  <style>
-    table tr td {
-      text-align: center;
-    }
-
-    .red {
-      color: #c80000;
-    }
-
-    .green {
-      color: #129e0f;
-    }
-    table{
-      width: 315px;
-    }
-    .player-name{
-      width: 315px;
-      text-align: center;
-    }
-    .recent-info{
-      float: left;
-    }
-  </style>
+  <link rel="stylesheet" href="css/materialize.min.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
 
+<div class="form-data">
+  <form class="row">
+    <div class="input-field col s12">
+      <select id="area">
+        <option value="" disabled>选择大区</option>
+        <option value="电信一">艾欧尼亚</option>
+        <option value="电信二">祖安</option>
+        <option value="电信三">诺克萨斯</option>
+        <option value="电信四">班德尔城</option>
+        <option value="电信五">皮尔特沃夫</option>
+        <option value="电信六">战争学院</option>
+        <option value="电信七">巨神峰</option>
+        <option value="电信八">雷瑟守备</option>
+        <option value="电信九">裁决之地</option>
+        <option value="电信十">黑色玫瑰</option>
+        <option value="电信十一">暗影岛</option>
+        <option value="电信十二">钢铁烈阳</option>
+        <option value="电信十三">水晶之痕</option>
+        <option value="电信十四">均衡教派</option>
+        <option value="电信十五">影流</option>
+        <option value="电信十六">守望之海</option>
+        <option value="电信十七">征服之海</option>
+        <option value="电信十八">卡拉曼达</option>
+        <option value="电信十九">皮城警备</option>
+        <option class="divider">------------------</option>
+        <option value="网通一">比尔吉沃特</option>
+        <option value="网通二">德玛西亚</option>
+        <option value="网通三">弗雷尔卓德</option>
+        <option value="网通四">无畏先锋</option>
+        <option value="网通五">恕瑞玛</option>
+        <option value="网通六">扭曲丛林</option>
+        <option value="网通七">巨龙之巢</option>
+      </select>
+      <label>选择大区</label>
+    </div>
+    <div class="input-field col s12">
+      <textarea id="nick" class="materialize-textarea">潘无处不在</textarea>
+      <label for="nick">昵称（一行一个）</label>
+    </div>
+    <div class="col s12 right-align">
+      <a href="#" id="search">查询</a>
+      <a href="#" id="clear">清空</a>
+    </div>
 
-<form>
-  <label for="area">大区</label>
-  <input id="area" type="text" name="serverName" value="网通三"/>
-  <br>
-  <label for="nick">昵称</label>
-  <textarea id="nick" name="playerNames"></textarea>
-  <a href="#" id="search">查询</a>
-  <a href="#" id="clear">清空</a>
-</form>
-<div id="data"></div>
+  </form>
+</div>
+<main class="row">
+  <div class="col s12" id="data"></div>
+</main>
+
 <script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
